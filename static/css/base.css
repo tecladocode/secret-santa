@@ -7,3 +7,9 @@ body {
 	min-width: 50%;
 	margin: 0 auto;
 }
+
+@media(max-device-width: 812px) {
+	.container {
+		max-width: 812px;
+	}
+}
