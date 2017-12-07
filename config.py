@@ -7,8 +7,8 @@ SECRET_KEY = 'This string will be replaced with a proper key in production.'
 SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL', 'sqlite:///' + os.path.join(BASEDIR, 'data.db'))
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-MAILGUN_DOMAIN = 'mg.schoolofcode.me'
-MAILGUN_API_KEY = 'key-1f1fb4afbcec8c5fca169a0c940767cc'
+MAILGUN_DOMAIN = os.environ.get('MAILGUN_DOMAIN')
+MAILGUN_API_KEY = os.environ.get('MAILGUN_API_KEY')
 
 PROPAGATE_EXCEPTIONS = True
 
