@@ -1,0 +1,97 @@
+.jumbotron {
+	box-shadow: 1px 1px 3px 0 #06060642;
+	border-radius: 3px;
+}
+
+.jumbotron .body {
+	padding: 16px 8px;
+}
+
+.jumbotron h1 {
+	margin: 0;
+	background-color: #E52900;
+	padding: 8px;
+	color: white;
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+	padding: 12px 24px;
+	font-size: 100%;
+	border-radius: 3px;
+	text-decoration: none;
+	color: white;
+	margin: 2px;
+	text-align: center;
+}
+
+.button-primary {
+	font-weight: bold;
+	background-color: #E52900;
+	box-shadow: none;
+	border: none;
+}
+
+.button-primary:hover {
+	box-shadow: 0 0 2px 0 #06060642;
+	cursor: pointer;
+}
+
+.button-secondary {
+	background-color: #4A4A4A;
+}
+
+.button-secondary:hover {
+	box-shadow: 0 0 2px 0 #06060642;
+}
+
+.buttons {
+	padding: 8px;
+	background-color: #06060603;
+	border-top: 1px solid #06060620;
+	display: flex;
+	align-items: center;
+}
+
+form div.fieldset {
+	margin: 8px 0;
+}
+
+form input[type="text"], input[type="password"] {
+	font-family: 'iA Writer Duospace', 'Consolas', 'Menlo', monospace;
+	padding: 6px 8px;
+	border-radius: 3px;
+	border: 1px solid #06060642;
+	font-size: 100%;
+}
+
+form label {
+	margin-right: 8px;
+}
+
+form label:after {
+	content: ':';
+}
+
+.flexible-space {
+	flex: 1;
+	display: inline-block;
+}
+
+.banner {
+	padding: 8px 16px;
+	margin-bottom: 8px;
+	border-radius: 3px;
+}
+
+.banner-error {
+	background-color: #f49291;
+	border: 1px solid #b10000;
+}
+
+.banner-info {
+	background-color: #4A4A4A;
+	border: 1px solid black;
+	color: white;
+}

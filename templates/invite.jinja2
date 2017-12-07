@@ -1,0 +1,23 @@
+{% extends 'base.jinja2' %}
+
+
+{% block content %}
+<div class="jumbotron">
+	<h1>{{ localise('site-invite_to_game', name=game.name) }}</h1>
+	<form method='POST'>
+		<div class="body">
+			<p>
+				{{ localise('site-what_is_invite') }}
+			</p>
+			<div class="fieldset">
+				<label for="email">{{ localise('site-form_email') }}</label>
+				<input type="text" name="email" id="email" />
+			</div>
+		</div>
+		<div class="buttons">
+			<div class="flexible-space"></div>
+			<button type="submit" class="button button-primary">{{ localise('site-invite') }}</button>
+		</div>
+	</form>
+</div>
+{% endblock %}

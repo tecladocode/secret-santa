@@ -1,0 +1,29 @@
+{% extends 'base.jinja2' %}
+
+
+{% block content %}
+<div class="jumbotron">
+	<h1>{{ localise('site-sign_up') }}</h1>
+	<form method="POST">
+		<div class="body">
+			<div class="fieldset">
+				<label for="name">{{ localise('site-form_name') }}</label>
+				<input type="text" name="name" id="name" />
+			</div>
+			<div class="fieldset">
+				<label for="email">{{ localise('site-form_email') }}</label>
+				<input type="text" name="email" id="email" />
+			</div>
+			<div class="fieldset">
+				<label for="password">{{ localise('site-form_password') }}</label>
+				<input type="password" name="password" id="password" />
+			</div>
+		</div>
+		<div class="buttons">
+			<div class="flexible-space"></div>
+			<a class="button button-secondary" href="{{ url_for('login') }}">{{ localise('site-log_in_instead') }}</a>
+			<button type="submit" class="button button-primary">{{ localise('site-sign_up') }}</button>
+		</div>
+	</form>
+</div>
+{% endblock %}

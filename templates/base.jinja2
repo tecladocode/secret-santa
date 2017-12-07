@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>{{ localise('title') }}</title>
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/components.css') }}">
+	{% block dependencies %}
+
+	{% endblock %}
+</head>
+<body>
+
+{% set _message = request.args.get('message') %}
+
+<div class="container">
+	{% if _message %}
+		<div class="banner banner-info">{{ _message }}</div>
+	{% endif %}
+	{% block content %}
+
+	{% endblock %}
+</div>
+</body>
+</html>

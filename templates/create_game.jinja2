@@ -1,0 +1,20 @@
+{% extends 'base.jinja2' %}
+
+
+{% block content %}
+<div class="jumbotron">
+	<h1>{{ localise('site-create_game') }}</h1>
+	<form method="POST">
+		<div class="body">
+			<div class="fieldset">
+				<label for="name">{{ localise('site-form_name') }}</label>
+				<input type="text" name="name" id="name" />
+			</div>
+		</div>
+		<div class="buttons">
+			<div class="flexible-space"></div>
+			<button type="submit" class="button button-primary">{{ localise('site-submit') }}</button>
+		</div>
+	</form>
+</div>
+{% endblock %}

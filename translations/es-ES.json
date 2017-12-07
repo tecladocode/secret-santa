@@ -1,0 +1,8 @@
+{
+  "title": "Amigo invisible",
+  "site-description": "Crea partidas y juega al amigo invisible online!",
+  "identity-need_logged_in": "Tienes que iniciar sesión antes de acceder a esa página.",
+  "access-dont_have_access": "Esa página está restringida a administratores.",
+  "auth-email_not_found": "No existe una cuenta con ese correo electrónico.",
+  "auth-incorrect_details": "El correo o contraseña no son correctos."
+}

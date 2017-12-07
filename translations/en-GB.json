@@ -1,0 +1,46 @@
+{
+  "title": "Secret santa",
+  "email-title": "secret-santa",
+
+  "error-not_implemented": "This feature has not been implemented yet.",
+  "error-email_invalid": "{email} doesn't seem to be a valid e-mail!",
+
+  "site-description": "Create your own secret santa games and play with others!",
+  "site-form_name": "Name",
+  "site-form_email": "Email",
+  "site-form_password": "Password",
+  "site-sign_up": "Sign up",
+  "site-sign_up_instead": "Sign up instead",
+  "site-log_out": "Log out",
+  "site-log_in": "Log in",
+  "site-log_in_instead": "Log in instead",
+  "site-sorry_error": "Sorry, you found an error!",
+  "site-go_back": "Go back",
+  "site-submit": "Submit",
+  "site-invite": "Invite",
+  "site-create_game": "Create game",
+  "site-start_game": "Start game",
+  "site-invite_more_players": "Invite more players",
+  "site-players": "Players",
+  "site-already_logged_in": "You were already logged in!",
+  "site-logged_out": "You have been logged out.",
+  "site-welcome_user": "Hello, {name}",
+  "site-your_secret_santa": "Your secret santa is {name}",
+  "site-invite_to_game": "Invite to {name}",
+  "site-what_is_invite": "When you invite someone, they receive an email to sign up and instantly join your game!",
+  "site-no_games_yet": "You don't have any games yet! Why not create one?",
+
+  "identity-need_logged_in": "You must be logged in before accessing that page.",
+
+  "access-dont_have_access": "You don't have access to that page.",
+
+  "auth-email_not_found": "An user with this e-mail could not be found.",
+  "auth-incorrect_details": "Your password or e-mail were incorrect.",
+
+  "games-error_creating": "There was an error creating the game.",
+  "games-not_enough_players": "There are not enough players to start this game.",
+  "game-invitation_text": "{inviter} has invited you to play Secret Santa with them.\n\nJoin the game by clicking this link: {link}.\n\nHave fun!",
+  "game-you_have_been_invited": "Invitation to play Secret Santa",
+  "game-friend_selection_error": "There was an error assigning secret santas—are there at least 3 players?",
+  "game-register_to_join_game": "Please register to join this game."
+}
