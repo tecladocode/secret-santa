@@ -48,9 +48,9 @@ class User(db.Model):
 
     @classmethod
     def register(cls, name, email, password):
-        user =  cls(name,
-                    email.lower(),
-                    hash_password(password))
+        user = cls(name,
+                   email.lower(),
+                   hash_password(password))
         user.save_to_db()
         return user
 

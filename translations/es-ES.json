@@ -36,6 +36,8 @@
   "site-no_games_yet": "Todavía no has creado ninguna partida! Quieres crear una?",
   "site-form_owner_plays": "Activa esto si quieres jugar tú tambien—o desactívalo para sólo ser un administrador de la partida",
   "site-no_players_yet": "Todavía no hay ningún jugador en esta partida.",
+  "site-game_where_you_adminstrator": "Partidas que sólo administras",
+  "site-game_where_you_play": "Partidas en las que juegas",
 
   "games-error_creating": "Hubo un error al crear la partida.",
   "games-not_enough_players": "No hay suficientes jugadores para empezar la partida.",
