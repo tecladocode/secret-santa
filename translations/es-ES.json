@@ -35,11 +35,14 @@
   "site-what_is_invite": "Cuando invitas a alguien, le mandaremos un correo para registrarse y unirse a tu partida!",
   "site-no_games_yet": "Todavía no has creado ninguna partida! Quieres crear una?",
   "site-form_owner_plays": "Activa esto si quieres jugar tú tambien—o desactívalo para sólo ser un administrador de la partida",
+  "site-no_players_yet": "Todavía no hay ningún jugador en esta partida.",
 
   "games-error_creating": "Hubo un error al crear la partida.",
   "games-not_enough_players": "No hay suficientes jugadores para empezar la partida.",
   "game-invitation_text": "{inviter} te ha invitado a una partida de amigo invisible.\n\nÚnete dandole click a este enlace: {link}.",
   "game-you_have_been_invited": "Te han invitado al amigo invisible",
   "game-friend_selection_error": "Hubo un error asignando amigos invisibles. Tiene que haber al menos 3 jugadores.",
-  "game-register_to_join_game": "Regístrate para unirte a esta partida."
+  "game-register_to_join_game": "Regístrate para unirte a esta partida.",
+  "game-your_secret_santa": "Tu amigo invisible es...",
+  "game-secret_santa_text": "Hola {name}!\n\nYa ha empezado la partida '{game_name}', y se han asignado los amigos invisibles.\n\nTu amigo invisible es: {friend_name}.\n\nVisita la partida haciendo click en este enlace: {link}."
 }

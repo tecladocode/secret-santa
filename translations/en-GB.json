@@ -30,6 +30,7 @@
   "site-what_is_invite": "When you invite someone, they receive an email to sign up and instantly join your game!",
   "site-no_games_yet": "You don't have any games yet! Why not create one?",
   "site-form_owner_plays": "Leave this checked if you want to play too, or unchecked if you only want to manage the game",
+  "site-no_players_yet": "No players have joined this game yet!",
 
   "identity-need_logged_in": "You must be logged in before accessing that page.",
 

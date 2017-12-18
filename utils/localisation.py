@@ -1,6 +1,5 @@
 from flask import g
 
-import re
 import os
 import config
 import json
@@ -9,19 +8,25 @@ translations_files_cache = {}
 
 
 def _load_translations_files(folder='translations', skip_cache=False):
+
     if len(translations_files_cache) > 0 and not skip_cache:
         return translations_files_cache
 
     translations_path = os.path.join(config.BASEDIR, folder)
-    if not os.path.isdir(translations_path):
-        raise RuntimeError('Could not access translations folder.')
 
-    for file in os.listdir(translations_path):
+    for file in _get_translations_files(translations_path):
         locale = file.split(".")[0]
         with open(os.path.join(translations_path, file), 'r') as f:
             translations_files_cache[locale] = json.load(f)
 
     return translations_files_cache
+
+
+def _get_translations_files(path):
+    if not os.path.isdir(path):
+        raise RuntimeError('Could not access translations folder.')
+
+    return os.listdir(path)
 
 
 def localise(key, locale=None, silent=False, **kwargs):

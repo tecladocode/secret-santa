@@ -5,6 +5,7 @@ from flask import url_for, request
 
 from libs.mailgun import Mailgun
 from db import db
+from utils.localisation import localise
 
 
 class UserInvite(db.Model):
@@ -35,7 +36,8 @@ class UserInvite(db.Model):
 
     def send(self, inviter_name):
         return Mailgun.send_email(self.email,
-                                  subject_key='game-you_have_been_invited',
-                                  text_key='game-invitation_text',
-                                  inviter=inviter_name,
-                                  link=request.url_root[:-1] + url_for('confirm_invite', confirmation_id=self.uuid))
+                                  subject=localise('game-you_have_been_invited'),
+                                  text=localise('game-invitation_text',
+                                                inviter=inviter_name,
+                                                link=request.url_root[:-1] + url_for('confirm_invite',
+                                                                                     confirmation_id=self.uuid)))

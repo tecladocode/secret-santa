@@ -6,11 +6,15 @@
     <h1>{{ game.name }}</h1>
     <div class="body">
         <h2>{{ localise('site-players') }}</h2>
+        {% if game.associated | length %}
         <ul>
             {% for association in game.associated %}
                 <li>{{ association.user.name }}</li>
             {% endfor %}
         </ul>
+        {% else %}
+            <p>{{ localise('site-no_players_yet') }}</p>
+        {% endif %}
         {% if game.players_assigned %}
         <p>{{ localise('site-your_secret_santa', name=game.friend_of(user).name) }}</p>
         {% endif %}
