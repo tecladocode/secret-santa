@@ -1,10 +1,7 @@
-import random
-
-import config
 from db import db
 from common.base_error import Error
-from utils.security import hash_password, check_hashed_password
 from models.games.games_players import GamePlayers
+from models.games.user_game_started import send_user_game_started_notification
 
 
 class Game(db.Model):
@@ -39,6 +36,16 @@ class Game(db.Model):
             association.friend_id = available_players.pop()
             association.save_to_db()
         self.players_assigned = True
+        self.send_game_started_notifications()
+
+    def send_game_started_notifications(self):
+        if not self.players_assigned:
+            raise Error('error-game_not_started')
+        for association in self.associated:
+            send_user_game_started_notification(email=association.user.email,
+                                                name=association.user.name,
+                                                friend_name=association.friend.name,
+                                                game_name=self.name)
 
     def add_player(self, player):
         self.associated.append(GamePlayers(user_id=player.id))

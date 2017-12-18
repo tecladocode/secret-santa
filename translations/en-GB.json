@@ -29,6 +29,7 @@
   "site-invite_to_game": "Invite to {name}",
   "site-what_is_invite": "When you invite someone, they receive an email to sign up and instantly join your game!",
   "site-no_games_yet": "You don't have any games yet! Why not create one?",
+  "site-form_owner_plays": "Leave this checked if you want to play too, or unchecked if you only want to manage the game",
 
   "identity-need_logged_in": "You must be logged in before accessing that page.",
 
@@ -41,6 +42,8 @@
   "games-not_enough_players": "There are not enough players to start this game.",
   "game-invitation_text": "{inviter} has invited you to play Secret Santa with them.\n\nJoin the game by clicking this link: {link}.\n\nHave fun!",
   "game-you_have_been_invited": "Invitation to play Secret Santa",
+  "game-secret_santa_text": "Hey {name}!\n\nThe game '{game_name}' has started and your secret santa has been decided.\n\nYour secret santa is: {friend_name}.\n\nGo to the game by clicking this link: {link}.\n\nHave fun!",
+  "game-your_secret_santa": "Your secret santa has been decided!",
   "game-friend_selection_error": "There was an error assigning secret santas—are there at least 3 players?",
   "game-register_to_join_game": "Please register to join this game."
 }

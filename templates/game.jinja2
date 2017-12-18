@@ -3,25 +3,24 @@
 
 {% block content %}
 <div class="jumbotron">
-		<h1>{{ game.name }}</h1>
-	<div class="body">
-		<h2>{{ localise('site-players') }}</h2>
-		<ul>
-			{% for association in game.associated %}
-				<li>{{ association.user.name }}</li>
-			{% endfor %}
-		</ul>
-	</div>
-	<div class="buttons">
-		{% if game.owner == g.user %}
-			<a href="{{ url_for('invite_player', name=game.name) }}" class="button button-secondary">{{ localise('site-invite_more_players') }}</a>
-		{% endif %}
-		<div class="flexible-space"></div>
-		{% if game.players_assigned %}
-			<p>{{ localise('site-your_secret_santa', name=game.friend_of(user).name) }}</p>
-		{% else %}
-			<a href="{{ url_for('start_game', name=game.name) }}" class="button button-primary" disabled>{{ localise('site-start_game') }}</a>
-		{% endif %}
-	</div>
+    <h1>{{ game.name }}</h1>
+    <div class="body">
+        <h2>{{ localise('site-players') }}</h2>
+        <ul>
+            {% for association in game.associated %}
+                <li>{{ association.user.name }}</li>
+            {% endfor %}
+        </ul>
+        {% if game.players_assigned %}
+        <p>{{ localise('site-your_secret_santa', name=game.friend_of(user).name) }}</p>
+        {% endif %}
+    </div>
+    {% if game.owner == g.user %}
+        <div class="buttons">
+            <a href="{{ url_for('invite_player', name=game.name) }}" class="button button-secondary">{{ localise('site-invite_more_players') }}</a>
+            <div class="flexible-space"></div>
+            <a href="{{ url_for('start_game', name=game.name) }}" class="button button-primary" disabled>{{ localise('site-start_game') }}</a>
+        </div>
+    {% endif %}
 </div>
 {% endblock %}

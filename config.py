@@ -1,4 +1,7 @@
 import os
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())
 
 BASEDIR = os.path.abspath(os.path.dirname(__file__))
 
@@ -13,8 +16,5 @@ MAILGUN_API_KEY = os.environ.get('MAILGUN_API_KEY')
 PROPAGATE_EXCEPTIONS = True
 
 THREADS_PER_PAGE = 8
-
-WTF_CSRF_ENABLED = True
-WTF_CSRF_SECRET_KEY = "somethingimpossibletoguess"
 
 ADMINS = frozenset(['jslvtr@gmail.com'])

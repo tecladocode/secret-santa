@@ -1,12 +1,10 @@
 import datetime
 import uuid
 
-import requests
 from flask import url_for, request
 
-from utils.localisation import localise
+from libs.mailgun import Mailgun
 from db import db
-import config
 
 
 class UserInvite(db.Model):
@@ -36,13 +34,8 @@ class UserInvite(db.Model):
         db.session.commit()
 
     def send(self, inviter_name):
-        email_request = requests.post(
-            "https://api.mailgun.net/v3/{}/messages".format(config.MAILGUN_DOMAIN),
-            auth=("api", config.MAILGUN_API_KEY),
-            data={"from": "{} <santa@{}>".format(localise('email-title'), config.MAILGUN_DOMAIN),
-                  "to": [self.email],
-                  "subject": localise('game-you_have_been_invited'),
-                  "text": localise('game-invitation_text', inviter=inviter_name,
-                                   link=request.url_root[:-1] + url_for('confirm_invite',
-                                                                        confirmation_id=self.uuid))})
-        return email_request
+        return Mailgun.send_email(self.email,
+                                  subject_key='game-you_have_been_invited',
+                                  text_key='game-invitation_text',
+                                  inviter=inviter_name,
+                                  link=request.url_root[:-1] + url_for('confirm_invite', confirmation_id=self.uuid))

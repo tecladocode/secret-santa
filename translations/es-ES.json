@@ -4,5 +4,42 @@
   "identity-need_logged_in": "Tienes que iniciar sesión antes de acceder a esa página.",
   "access-dont_have_access": "Esa página está restringida a administratores.",
   "auth-email_not_found": "No existe una cuenta con ese correo electrónico.",
-  "auth-incorrect_details": "El correo o contraseña no son correctos."
+  "auth-incorrect_details": "El correo o contraseña no son correctos.",
+
+  "email-title": "secret-santa",
+
+  "error-not_implemented": "Esa funcionalidad todavia no está disponible.",
+  "error-email_invalid": "{email} no parece ser un correo electrónico válido!",
+
+  "site-form_name": "Nombre",
+  "site-form_email": "E-mail",
+  "site-form_password": "Contraseña",
+  "site-sign_up": "Regístrate",
+  "site-sign_up_instead": "Regístrate",
+  "site-log_out": "Cerrar sesión",
+  "site-log_in": "Iniciar sesión",
+  "site-log_in_instead": "Iniciar sesión",
+  "site-sorry_error": "Oops, has encontrado un error! Estamos trabajando para arreglarlo.",
+  "site-go_back": "Ir atrás",
+  "site-submit": "Enviar",
+  "site-invite": "Invitar",
+  "site-create_game": "Crear partida",
+  "site-start_game": "Empezar partida",
+  "site-invite_more_players": "Invita más jugadores",
+  "site-players": "Jugadores",
+  "site-already_logged_in": "Ya habías iniciado sesión antes.",
+  "site-logged_out": "Has cerrado tu sesión.",
+  "site-welcome_user": "Hola, {name}",
+  "site-your_secret_santa": "Tu amigo invisible es {name}",
+  "site-invite_to_game": "Invitación a {name}",
+  "site-what_is_invite": "Cuando invitas a alguien, le mandaremos un correo para registrarse y unirse a tu partida!",
+  "site-no_games_yet": "Todavía no has creado ninguna partida! Quieres crear una?",
+  "site-form_owner_plays": "Activa esto si quieres jugar tú tambien—o desactívalo para sólo ser un administrador de la partida",
+
+  "games-error_creating": "Hubo un error al crear la partida.",
+  "games-not_enough_players": "No hay suficientes jugadores para empezar la partida.",
+  "game-invitation_text": "{inviter} te ha invitado a una partida de amigo invisible.\n\nÚnete dandole click a este enlace: {link}.",
+  "game-you_have_been_invited": "Te han invitado al amigo invisible",
+  "game-friend_selection_error": "Hubo un error asignando amigos invisibles. Tiene que haber al menos 3 jugadores.",
+  "game-register_to_join_game": "Regístrate para unirte a esta partida."
 }
